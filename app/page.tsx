@@ -23,21 +23,21 @@ const projects = [
 
 export default function Home() { 
   return (
-    <main className="min-h-screen bg-black text-slate-300">
+    <main className="min-h-screen bg-black text-slate-300 relative overflow-hidden">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-6">
+      <section className="relative pt-32 pb-2 px-6">
         {/* The "Spotlight" - an indigo glow that feels premium on black */}
         <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-indigo-900/20 blur-[120px] rounded-full" />
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-6xl md:text-7xl font-black text-white tracking-tight mb-8">
-            Building for the <br />
+            Web Designer <br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-cyan-400">
-              Next Billion Users
+              & Developer
             </span>
           </h1>
           <p className="text-xl text-slate-400 leading-relaxed max-w-2xl mx-auto mb-12">
-            Software Developer focused on creating performant, resilient tools—from e-commerce solutions to campus-wide platforms.
+            Crafting digital solutions for local challenges, one line of code at a time.
           </p>
           
           <div className="flex flex-wrap justify-center gap-5">

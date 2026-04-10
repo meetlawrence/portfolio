@@ -25,7 +25,7 @@ export default function About() {
 
         {/* Subtle Footer Note */}
         <p className="mt-12 text-sm text-slate-500 italic text-center">
-          "Driven by a passion for genetics, biotechnology, and the code that connects us all."
+          "A lot in progress, more coming, one day at a time."
         </p>
       </div>
     </main>

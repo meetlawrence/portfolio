@@ -7,10 +7,10 @@ export default function Biodata() {
 
   return (
     <div className="w-full bg-transparent font-sans">
-      <div className="relative border-l border-slate-800 pl-8 py-4">
+      <div className="relative border-l border-slate-800 pl-8 py-4 my-2.5">
         
         {/* Decorative Dot - Changed to Indigo to match theme */}
-        <div className="absolute -left-[5px] top-0 h-2.5 w-2.5 rounded-full bg-indigo-500 shadow-[0_0_15px_rgba(99,102,241,0.5)]" />
+        {/* <div className="absolute -left-[5px] top-0 h-2.5 w-2.5 rounded-full bg-indigo-500 shadow-[0_0_15px_rgba(99,102,241,0.5)] " /> */}
 
         <header className="mb-10">
           <h2 className="text-4xl font-black text-white tracking-tighter mb-2 uppercase">
@@ -55,7 +55,7 @@ export default function Biodata() {
         </section>
 
         {/* Decorative Bottom Dot */}
-        <div className="absolute -left-[5px] bottom-0 h-2.5 w-2.5 rounded-full bg-slate-800" />
+        {/* <div className="absolute -left-[5px] bottom-0 h-2.5 w-2.5 rounded-full bg-slate-800 ml-2.5 mb-5"  /> */}
       </div>
     </div>
   );
