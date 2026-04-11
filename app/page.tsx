@@ -4,26 +4,26 @@ const projects = [
   {
     title: 'Edrealz Xtiches',
     status: 'In Development',
-    description: 'An upcoming e-commerce architecture for a fashion house, focusing on secure payment flows and inventory management.',
-    technologies: ['React', 'Next.js', 'Tailwind CSS', 'Node.js', 'Express', 'Paystack API'],
+    description: 'A full-stack e-commerce solution for a premier fashion house, featuring automated inventory management and secure Paystack payment processing.',
+    technologies: ['React', 'Next.js', 'Node.js', 'PostgreSQL', 'Paystack API'],
     link: '#' 
   },
   {
     title: 'AbegChop',
-    description: 'A campus-focused food discovery application designed for students to browse local menus with a mobile-first approach.',
-    technologies: ['JavaScript', 'JSON', 'CSS Flexbox', 'Performance'],
+    description: 'A mobile-first food discovery platform optimized for low-bandwidth environments, enabling students to navigate campus-specific culinary options.',
+    technologies: ['JavaScript', 'JSON', 'CSS Grid/Flexbox', 'Performance Optimization'],
     link: 'https://meetlawrence.github.io/wdd231/project/index.html'
   },
   {
     title: 'CineVibe',
-    description: 'A cinematic discovery platform leveraging real-time movie APIs with a focus on immersive UI and fast data fetching.',
-    technologies: ['API Integration', 'JavaScript', 'CSS Flexbox', 'Performance'],
+    description: 'A high-performance cinematic exploration tool utilizing third-party REST APIs to deliver real-time movie insights and immersive user interfaces.',
+    technologies: ['JavaScript', 'REST APIs', 'Asynchronous Programming', 'CSS3'],
     link: 'https://meetlawrence.github.io/wdd330/cinevibe/index.html'
   },
   {
-    title: 'CAL-CC',
-    description: 'A central business directory for the Calabar Chamber of Commerce, built to handle local data at scale.',
-    technologies: ['JavaScript', 'Responsive Design', 'Data Management'],
+    title: 'Chamber Portal',
+    description: 'A digitized business directory engineered for the Calabar Chamber of Commerce to streamline member data management and local business visibility.',
+    technologies: ['JavaScript', 'Responsive Architecture', 'JSON Data Structures'],
     link: 'https://meetlawrence.github.io/wdd231/chamber/index.html'
   }
 ];

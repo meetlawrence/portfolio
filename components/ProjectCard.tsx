@@ -2,10 +2,11 @@ interface ProjectCardProps {
   title: string;
   description: string;
   technologies: string[];
-  link?: string;
+    link?: string;
+    status?: string; // Optional status badge (e.g., "In Progress", "Completed")
 }
 
-export default function ProjectCard({ title, description, technologies, link }: ProjectCardProps) {
+export default function ProjectCard({ title, description, technologies, link, status }: ProjectCardProps) {
   return (
     <article className="group relative p-8 rounded-2xl transition-all duration-500 bg-slate-950/40 hover:bg-slate-900/60 overflow-hidden">
       
@@ -13,6 +14,7 @@ export default function ProjectCard({ title, description, technologies, link }: 
       <div className="absolute -inset-px bg-gradient-to-br from-indigo-500/20 via-transparent to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       
       <div className="relative z-10 flex flex-col h-full">
+        
         {/* 2. Number/Index Hint (Optional aesthetic touch) */}
         <span className="text-indigo-500/30 font-mono text-xs mb-4 group-hover:text-indigo-400 transition-colors">
           // FEATURED_PROJECT
@@ -22,6 +24,20 @@ export default function ProjectCard({ title, description, technologies, link }: 
           {title}
         </h3>
         
+        {status && (
+            <span className="
+                w-fit whitespace-nowrap
+                text-[10px] font-bold tracking-widest uppercase 
+                px-2.5 py-1 rounded-full 
+                bg-indigo-500/10 text-indigo-400 
+                border border-indigo-500/20 
+                shadow-[0_0_10px_rgba(99,102,241,0.1)]
+                animate-pulse-slow
+            ">
+                {status}
+            </span>
+            )}
+              
         <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
           {description}
         </p>
