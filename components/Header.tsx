@@ -16,9 +16,10 @@ export default function Header() {
           </span>
         </Link>
         <nav>
-          <ul className="flex gap-10 text-sm font-medium tracking-wide">
+          <ul className="flex gap-2 text-sm font-medium tracking-wide sm:gap-10">
             <li><Link href="/" className="text-slate-400 hover:text-white transition-colors">HOME</Link></li>
             <li><Link href="/about" className="text-slate-400 hover:text-white transition-colors">ABOUT</Link></li>
+            <li><Link href="/projects" className="text-slate-400 hover:text-white transition-colors">PROJECTS</Link></li>
           </ul>
         </nav>
       </div>
