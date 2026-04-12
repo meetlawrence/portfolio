@@ -12,7 +12,7 @@ export default function ProjectCard({ title, description, technologies, link, st
       group relative p-8 rounded-2xl transition-all duration-500 
       bg-slate-950/40 hover:bg-slate-900/60 overflow-hidden
       /* Mobile Glow Effect */
-      border border-indigo-500/20 shadow-[0_0_20px_rgba(99,102,241,0.05)]
+       shadow-[0_0_20px_rgba(99,102,241,0.05)]
       md:border-transparent md:shadow-none
     ">
       

@@ -27,7 +27,7 @@ export default function ContactPage() {
             group relative p-8 rounded-2xl transition-all duration-500 
             bg-slate-950/40 hover:bg-slate-900/60 overflow-hidden 
             /* Mobile-First Glow & Border */
-            border border-indigo-500/20 shadow-[0_0_20px_rgba(99,102,241,0.05)]
+             shadow-[0_0_20px_rgba(99,102,241,0.05)]
             md:border-slate-900 md:shadow-none
           ">
             {/* 1. Animated Gradient Glow (Always visible on mobile) */}
@@ -64,8 +64,7 @@ export default function ContactPage() {
           {/* Location/Availability Card */}
           <article className="
             group relative p-8 rounded-2xl transition-all duration-500 
-            bg-slate-950/40 hover:bg-slate-900/60 overflow-hidden 
-            border border-indigo-500/20 shadow-[0_0_20px_rgba(99,102,241,0.05)]
+            bg-slate-950/40 hover:bg-slate-900/60 overflow-hidden shadow-[0_0_20px_rgba(99,102,241,0.05)]
             md:border-slate-900 md:shadow-none
           ">
             <div className="
