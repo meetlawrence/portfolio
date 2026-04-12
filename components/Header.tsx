@@ -5,7 +5,7 @@ import MobileMenu from "./MobileMenu"; // Import the new component
 
 export default function Header() {
   return (
-    <header className="bg-black/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-800 text-white">
+    <header className="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-slate-800 text-white">
       <div className="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
         
         {/* Brand */}
@@ -19,12 +19,14 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav (Hidden on Mobile) */}
-        <nav className="hidden md:block">
+        <nav className="hidden md:flex items-center gap-8">
           <NavLinks />
         </nav>
 
         {/* Mobile Nav (Hidden on Desktop) */}
-        <MobileMenu />
+        <div className="md:hidden">
+          <MobileMenu />
+        </div>
 
       </div>
     </header>
