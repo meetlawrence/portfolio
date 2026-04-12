@@ -27,9 +27,13 @@ export default function SchoolPage() {
           data structures, API management, and responsive architecture.
         </p>
       </section>
+      <section>
+        <h3 className="text-2xl font-black text-white tracking-tighter mb-4">Coming Soon!</h3>
+      </section>
+
 
       <div className="opacity-80">
-        <ProjectList projects={schoolProjects} />
+        {/* <ProjectList projects={schoolProjects} /> */}
       </div>
     </div>
   );

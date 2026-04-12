@@ -22,8 +22,11 @@ export default function OpenSourcePage() {
           architecture that others can build upon.
         </p>
       </section>
+      <section>
+        <h3 className="text-2xl font-black text-white tracking-tighter mb-4">Coming Soon!</h3>
+      </section>
 
-      <ProjectList projects={openSource} />
+      {/* <ProjectList projects={openSource} /> */}
     </div>
   );
 }

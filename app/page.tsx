@@ -9,12 +9,6 @@ const projects = [
     link: '#' 
   },
   {
-    title: 'AbegChop',
-    description: 'A mobile-first food discovery platform optimized for low-bandwidth environments, enabling students to navigate campus-specific culinary options.',
-    technologies: ['JavaScript', 'JSON', 'CSS Grid/Flexbox', 'Performance Optimization'],
-    link: 'https://meetlawrence.github.io/wdd231/project/index.html'
-  },
-  {
     title: 'CineVibe',
     description: 'A high-performance cinematic exploration tool utilizing third-party REST APIs to deliver real-time movie insights and immersive user interfaces.',
     technologies: ['JavaScript', 'REST APIs', 'Asynchronous Programming', 'CSS3'],
@@ -48,12 +42,16 @@ export default function Home() {
           </p>
           
           <div className="flex flex-wrap justify-center gap-5">
-            <button className="px-10 py-4 bg-white text-black font-bold rounded-full hover:bg-indigo-400 transition-all duration-300">
-              View Projects
-            </button>
-            <button className="px-10 py-4 bg-transparent text-white font-bold rounded-full border border-slate-700 hover:border-white transition-all">
-              Resume
-            </button>
+            <a href="/projects">
+              <button className="px-10 py-4 bg-white text-black font-bold rounded-full hover:bg-indigo-400 transition-all duration-300">
+                View Projects
+              </button>
+            </a>
+            <a href="/meetLawrenceResume.pdf" target='-blank' rel='noopener noreferrer'>
+              <button className="px-10 py-4 bg-transparent text-white font-bold rounded-full border border-slate-700 hover:border-white transition-all">
+                Resume
+              </button>
+            </a>  
           </div>
         </div>
       </section>

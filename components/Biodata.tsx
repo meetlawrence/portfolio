@@ -9,7 +9,6 @@ export default function Biodata() {
     <div className="w-full bg-transparent font-sans selection:bg-indigo-500/30">
       <div className="relative border-l border-slate-800/60 pl-8 py-2 ml-1">
         
-        {/* Animated Accent Line - Purely aesthetic, adds a sense of "active" development */}
         <div className="absolute top-0 left-[-1px] h-16 w-[2px] bg-gradient-to-b from-indigo-500 to-transparent" />
 
         <header className="mb-12">
@@ -27,7 +26,7 @@ export default function Biodata() {
         </header>
 
         <section className="space-y-12">
-          {/* Professional Narrative with enhanced typography */}
+          
           <div className="max-w-2xl">
             <p className="text-slate-400 text-lg md:text-xl leading-relaxed font-light">
               I bridge the gap between <span className="text-white font-semibold">complex backend logic</span> and <span className="text-indigo-400 font-medium">intuitive user experiences</span>. 
@@ -35,7 +34,7 @@ export default function Biodata() {
             </p>
           </div>
 
-          {/* Enhanced Skill Tags with Glassmorphism */}
+          
           <div>
             <h3 className="text-xs font-bold text-slate-500 uppercase tracking-[0.3em] mb-6">Expertise</h3>
             <div className="flex flex-wrap gap-3">
@@ -53,7 +52,7 @@ export default function Biodata() {
           {/* Contact CTA with animated arrow */}
           <div className="pt-4">
             <a 
-              href="mailto:your-email@example.com" 
+              href="mailto:okonwhyte@gmail.com" 
               className="inline-flex items-center group text-white font-bold tracking-tight text-lg"
             >
               <span className="border-b-2 border-indigo-500/50 group-hover:border-indigo-500 pb-1 transition-all duration-300">
