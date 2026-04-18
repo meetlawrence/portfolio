@@ -32,9 +32,9 @@ export default function Home() {
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-6xl md:text-7xl font-black text-white tracking-tight mb-8">
-            Hard Logic. <br />
+            Web Designer <br />
             <span className="bg-clip-text text-transparent bg-linear-to-r from-indigo-400 to-cyan-400">
-              Fluid Design.
+              & Developer
             </span>
           </h1>
           <p className="text-xl text-slate-400 leading-relaxed max-w-2xl mx-auto mb-12">

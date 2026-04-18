@@ -5,7 +5,7 @@ import MobileMenu from "./MobileMenu"; // Import the new component
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-slate-800 text-white">
+    <header className="fixed top-0 left-0 w-full bg-black/50 backdrop-blur-md z-50 border-b border-slate-800 text-white">
       <div className="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
         
         {/* Brand */}
