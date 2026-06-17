@@ -6,7 +6,6 @@ const projects = [
     status: 'In Development',
     description: 'A full-stack e-commerce solution for a premier fashion house, featuring automated inventory management and secure Paystack payment processing.',
     technologies: ['React', 'Next.js', 'Node.js', 'PostgreSQL', 'Paystack API'],
-    link: '#' 
   },
   {
     title: 'CineVibe',

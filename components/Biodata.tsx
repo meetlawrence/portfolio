@@ -1,9 +1,19 @@
 export default function Biodata() {
   const skills = [
-    "HTML/CSS (Flexbox/Grid)", "JavaScript (ES6+)", "TypeScript", 
-    "React / Next.js", "Node.js", "Express", 
-    "PostgreSQL / MySQL", "Figma", "Git / GitHub"
-  ];
+  "HTML5 / CSS3",
+  "JavaScript (ES6+)",
+  "TypeScript", 
+  "React / Next.js", 
+  "Tailwind CSS",
+  "Node.js", 
+  "Express", 
+  "RESTful APIs",
+  "PostgreSQL / MySQL", 
+  "MongoDB", 
+  "Unit Testing (Jest)",
+  "Figma", 
+  "Git / GitHub"
+];
 
   return (
     <div className="w-full bg-transparent font-sans selection:bg-indigo-500/30">

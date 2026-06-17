@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 
 const projectLinks = [
   { name: 'Overview', href: '/projects' },
-  { name: 'Open Source', href: '/projects/opensource' },
+  { name: 'Professional Work', href: '/projects/professional' },
   { name: 'School Projects', href: '/projects/school' },
 ];
 

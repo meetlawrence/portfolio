@@ -6,7 +6,6 @@ export interface Project {
   status?: string; // Optional field
 }
 
-
 import ProjectList from '@/components/ProjectList';
 
 export const allProjects: Project[] = [
@@ -18,17 +17,24 @@ export const allProjects: Project[] = [
     link: '#' 
   },
   {
-    title: 'CineVibe',
-    description: 'A high-performance cinematic exploration tool utilizing third-party REST APIs to deliver real-time movie insights and immersive user interfaces.',
-    technologies: ['JavaScript', 'REST APIs', 'Asynchronous Programming', 'CSS3'],
-    link: 'https://meetlawrence.github.io/wdd330/cinevibe/index.html'
+    title: 'TheEliteGlam',
+    status: 'In Development',
+    description: 'A high-performance fashion commerce architecture featuring a custom-built content management engine, fluid asset optimization layers, and an optimized, mobile-first design built to minimize latency.',
+    technologies: ['React', 'Next.js', 'Node.js', 'MongoDB', 'Stripe API'],
+    link: '#'
   },
   {
     title: 'CSE Service Network',
     status: 'Temporary Server',
     description: 'A full-stack community platform connecting volunteers with local service opportunities, featuring secure user authentication and a relational database.',
     technologies: ['Node.js', 'Express', 'PostgreSQL', 'JavaScript', 'Render'],
-    link: 'https://cse340-kl7q.onrender.com/' // Replace with your actual Render deployment URL
+    link: 'https://cse340-kl7q.onrender.com/'
+  },
+  {
+    title: 'CineVibe',
+    description: 'A high-performance cinematic exploration tool utilizing third-party REST APIs to deliver real-time movie insights and immersive user interfaces.',
+    technologies: ['JavaScript', 'REST APIs', 'Asynchronous Programming', 'CSS3'],
+    link: 'https://meetlawrence.github.io/wdd330/cinevibe/index.html'
   },
   {
     title: 'AbegChop',
@@ -51,58 +57,59 @@ export const allProjects: Project[] = [
 ];
 
 export default function ProjectsOverview() {
-  // 1. Filter the projects into your specific categories
-  const engineeredSystems = allProjects.filter(p => 
-    ['CSE Service Network', 'Edrealz Xtiches'].includes(p.title)
+  // 1. Digital Commerce & API Gateways
+  const commerceSystems = allProjects.filter(p => 
+    ['Edrealz Xtiches', 'TheEliteGlam'].includes(p.title)
   );
 
-  const interactiveExps = allProjects.filter(p => 
-    ['CineVibe', 'Chamber Portal'].includes(p.title)
+  // 2. Core Full-Stack Platforms & Network Apps
+  const fullStackApps = allProjects.filter(p => 
+    ['CSE Service Network'].includes(p.title)
   );
 
-  const strategicDesigns = allProjects.filter(p => 
-    ['AbegChop', 'Dream Nigeria'].includes(p.title)
+  // 3. Client-Side Engineering, Optimization & Data Directories
+  const performanceUI = allProjects.filter(p => 
+    ['CineVibe', 'AbegChop', 'Chamber Portal', 'Dream Nigeria'].includes(p.title)
   );
 
   return (
     <div className="space-y-24">
-      {/* Header */}
+      {/* Header Block */}
       <section>
-        <h1 className="text-5xl font-black text-white tracking-tighter mb-6">
+        <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tighter mb-6 uppercase">
           The Portfolio <br />
           <span className="text-indigo-500">Log.</span>
         </h1>
-        <p className="text-slate-400 max-w-2xl">
-          A curated collection of projects that exemplify my journey through the realms of engineered systems, interactive experiences, and strategic design. Each project is a testament to my commitment to innovation, problem-solving, and creative expression in the digital landscape.
+        <p className="text-slate-400 max-w-2xl text-sm sm:text-base leading-relaxed font-light">
+          A three-tiered catalog tracking full-stack execution, web system integration, and lightweight client interfaces optimized for fluid user experiences.
         </p>
       </section>
 
-      {/* 01. Engineered Systems Section */}
+      {/* Tier 01 */}
       <section>
         <div className="flex items-center gap-4 mb-8">
-           <h2 className="text-xl font-bold text-white tracking-widest uppercase">01. Engineered Systems</h2>
-           <div className="h-px grow bg-slate-800" />
+           <h2 className="text-xs sm:text-sm font-bold text-white tracking-[0.25em] uppercase">01. Commerce &amp; Financial Integration</h2>
+           <div className="h-px grow bg-slate-800/80" />
         </div>
-        {/* Pass the filtered array to existing ProjectList component */}
-        <ProjectList projects={engineeredSystems} />
+        <ProjectList projects={commerceSystems} />
       </section>
 
-      {/* 02. Interactive Experiences Section */}
+      {/* Tier 02 */}
       <section>
         <div className="flex items-center gap-4 mb-8">
-           <h2 className="text-xl font-bold text-white tracking-widest uppercase">02. Interactive Experiences</h2>
-           <div className="h-px grow bg-slate-800" />
+           <h2 className="text-xs sm:text-sm font-bold text-white tracking-[0.25em] uppercase">02. Distributed Full-Stack Applications</h2>
+           <div className="h-px grow bg-slate-800/80" />
         </div>
-        <ProjectList projects={interactiveExps} />
+        <ProjectList projects={fullStackApps} />
       </section>
 
-      {/* 03. Strategic Design Section */}
+      {/* Tier 03 */}
       <section>
         <div className="flex items-center gap-4 mb-8">
-           <h2 className="text-xl font-bold text-white tracking-widest uppercase">03. Strategic Design</h2>
-           <div className="h-px grow bg-slate-800" />
+           <h2 className="text-xs sm:text-sm font-bold text-white tracking-[0.25em] uppercase">03. Performance UI &amp; Data Directories</h2>
+           <div className="h-px grow bg-slate-800/80" />
         </div>
-        <ProjectList projects={strategicDesigns} />
+        <ProjectList projects={performanceUI} />
       </section>
     </div>
   );

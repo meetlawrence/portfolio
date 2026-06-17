@@ -16,21 +16,21 @@ export default function Footer() {  
         {/* Social / Quick Links */}
         <div className="flex gap-8 text-sm font-medium">
           <a 
-            href="https://github.com/your-username" 
+            href="https://github.com/meetlawrence" 
             target="_blank" 
             className="hover:text-white transition-colors"
           >
             GitHub
           </a>
           <a 
-            href="https://linkedin.com/in/your-username" 
+            href="https://www.linkedin.com/in/lawrence-okon-53521b1aa/" 
             target="_blank" 
             className="hover:text-white transition-colors"
           >
             LinkedIn
           </a>
           <a 
-            href="mailto:lokon4@byupathway.edu" 
+            href="mailto:meetlawrence@outlook.com" 
             className="hover:text-white transition-colors"
           >
             Contact
