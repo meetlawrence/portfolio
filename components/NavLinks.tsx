@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-const navItems = [
+const mainLinks = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Projects', href: '/projects' },
@@ -15,8 +15,10 @@ export default function NavLinks() {
 
   return (
     <nav className="flex items-center gap-5 sm:gap-8">
-      {navItems.map((link) => {
-        const isActive = pathname === link.href;
+      {mainLinks.map((link) => {
+        const isActive = link.href === '/' 
+          ? pathname === '/' 
+          : pathname.startsWith(link.href);
 
         return (
           <Link
@@ -26,11 +28,6 @@ export default function NavLinks() {
               isActive ? 'text-white' : 'text-slate-500 hover:text-slate-300'
             }`}
           >
-            {/* Mono-style label */}
-            {/* <span className="font-mono text-[10px] tracking-widest uppercase mb-1">
-              {isActive ? '// ACTIVE' : link.name}
-            </span> */}
-            
             {/* The Link Text */}
             <span className="text-sm font-bold uppercase tracking-tighter">
               {isActive ? link.name : link.name}
